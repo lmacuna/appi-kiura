@@ -26,7 +26,7 @@ Route.post('/admin',validarAdmin)
 Route.post('/empleo',verificarUsuario,agregarEmpleo)
 
 //OBTENER TODOS LOS EMPLEOS
-Route.get('/empleos',verificarUsuario,getEmpleos)
+Route.get('/empleos',getEmpleos)
 
 module.exports=Route;
 
