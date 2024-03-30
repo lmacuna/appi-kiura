@@ -3,9 +3,9 @@ const {Usuario,Empleo}= require('../Model/model.js')
 
 
 
-const prueba=(req,res)=>{
+const prueba=async(req,res)=>{
     try {
-        return res.json({"data":"Prueba recibida"})
+        return await res.json({"data":"Prueba recibida"})
     } catch (error) {
         return res.sendStatus(500).json({ message: error.message })
     }

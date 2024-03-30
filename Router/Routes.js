@@ -9,8 +9,10 @@ Route.use(cors())
 Route.use(morgan('dev'))
 Route.use(multer().any())
 
-
+//PRUEBA
 Route.get('/',prueba)
+
+
 //INSERTAR USUARIO
 Route.post('/usuarios',postUsuario)
 
