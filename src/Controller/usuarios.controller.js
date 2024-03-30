@@ -121,4 +121,4 @@ const getEmpleos=async(req,res)=>{
 
 }
 
-module.exports = { getUsuarios, postUsuario,validarAdmin,verificarUsuario,agregarEmpleo,getEmpleos }
+module.exports = { getUsuarios, postUsuario,validarAdmin,verificarUsuario,agregarEmpleo,getEmpleos,prueba }

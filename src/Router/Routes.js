@@ -2,7 +2,7 @@ const Route=require("express").Router()
 const cors =require("cors")
 const multer=require("multer")
 const morgan=require("morgan")
-const { getUsuarios, postUsuario, validarAdmin, verificarUsuario, agregarEmpleo, getEmpleos } = require("../Controller/usuarios.controller")
+const { getUsuarios, postUsuario, validarAdmin, verificarUsuario, agregarEmpleo, getEmpleos, prueba } = require("../Controller/usuarios.controller")
 
 
 Route.use(cors())
@@ -10,7 +10,7 @@ Route.use(morgan('dev'))
 Route.use(multer().any())
 
 
-
+Route.get('/',prueba)
 //INSERTAR USUARIO
 Route.post('/usuarios',postUsuario)
 
