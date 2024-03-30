@@ -1,11 +1,11 @@
-const app=require('./src/App/app.js');
+const app=require('./app.js');
 
 require("dotenv").config();
 const port=process.env.PORT || 4000
 
 
 
-app.use(require('./src/Router/Routes.js'))
+app.use(require('./Router/Routes.js'))
 app.listen(port,(error)=>{
 
     if(error){
