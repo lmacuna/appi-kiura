@@ -3,6 +3,15 @@ const {Usuario,Empleo}= require('../Model/model.js')
 
 
 
+const prueba=(req,res)=>{
+    try {
+        return res.send("recibido")
+    } catch (error) {
+        return res.sendStatus(500).json({ message: error.message })
+    }
+}
+
+
 const postUsuario = async (req, res) => {
     try {
 
