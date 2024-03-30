@@ -5,7 +5,7 @@ const {Usuario,Empleo}= require('../Model/model.js')
 
 const prueba=(req,res)=>{
     try {
-        return res.send("recibido")
+        return res.json({"data":"Prueba recibida"})
     } catch (error) {
         return res.sendStatus(500).json({ message: error.message })
     }
