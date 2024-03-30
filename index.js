@@ -1,7 +1,7 @@
 const app=require('./src/App/app.js');
 
 require("dotenv").config();
-app.set('port',process.env.PORT || process.env.PORTO || 4000)
+app.set('port',process.env.PORT || 4000)
 
 
 
