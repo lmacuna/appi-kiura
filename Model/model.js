@@ -5,7 +5,13 @@ require("dotenv").config()
 const sequelize = new Sequelize(process.env.DATA_BASE, process.env.USER, process.env.PASSWORD, {
     host: process.env.HOST,
     dialect: 'mysql',
-    port: process.env.PUERTO
+    port: process.env.PUERTO,
+    pool: {
+        max: 5,
+        min: 0,
+        acquire: 30000,
+        idle: 10000
+      }
 })
 
 class Usuario extends Model {
