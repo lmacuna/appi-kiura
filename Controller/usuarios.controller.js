@@ -1,6 +1,6 @@
 const {Usuario,Empleo}= require('../Model/model.js')
 
-
+const cnx =require("../conexion/conexion.js")
 
 
 const prueba=async(req,res)=>{
